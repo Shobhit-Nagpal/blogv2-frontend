@@ -48,7 +48,7 @@ function BlogDetailPage() {
             <p className="text-grey text-lg p-3">{formatDate(createdAt)}</p>
             </div>
             <div className="flex items-center justify-center"> 
-            <div className="text-white blog text-lg pl-60 pr-60 mt-10 leading-8" dangerouslySetInnerHTML={{__html: content}}></div>
+            <div className="text-white blog text-lg pl-10 pr-10 mt-10 leading-8" dangerouslySetInnerHTML={{__html: content}}></div>
             </div>
             </>
         }

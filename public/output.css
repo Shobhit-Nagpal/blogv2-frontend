@@ -844,12 +844,12 @@ video {
   padding-bottom: 0.75rem;
 }
 
-.pl-60{
-  padding-left: 15rem;
+.pl-10{
+  padding-left: 2.5rem;
 }
 
-.pr-60{
-  padding-right: 15rem;
+.pr-10{
+  padding-right: 2.5rem;
 }
 
 .text-center{

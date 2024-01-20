@@ -11,6 +11,10 @@
     font-family: 'Rubik', sans-serif;
  }
 
+ html {
+     min-width: 525px;
+ }
+
 .blog h1 {
     font-size: 2.25rem;
 }

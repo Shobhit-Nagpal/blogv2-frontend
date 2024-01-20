@@ -7,6 +7,7 @@ import Layout from "../components/Layout";
 import { useAdmin } from "../context/AdminContext";
 import { baseURL } from "../utils/utils";
 import he from "he";
+import formatDate from "../utils/date";
 
 function DashboardPage() {
 
@@ -80,7 +81,7 @@ function DashboardPage() {
                     id={post.id} 
                     title={he.decode(post.title)} 
                     content={he.decode(post.content)}
-                    created_at={post.created_at} 
+                    created_at={formatDate(post.created_at)} 
                     is_published={post.is_published}
                     fromDashboard={true}
                 />

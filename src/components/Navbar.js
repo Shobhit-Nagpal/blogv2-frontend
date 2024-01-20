@@ -16,9 +16,9 @@ function Navbar() {
     return (
         <div className="flex justify-between items-center gap-12 p-4 md:p-8 md:gap-10">
         <div>
-        <a className="text-grey text-2xl font-bold ml-32 hover:text-blue lg:ml-52" href="/">[s]</a>
+        <a className="text-grey text-2xl font-bold ml-16 hover:text-blue lg:ml-52" href="/">[s]</a>
         </div>
-        <div className="flex justify-between items-center gap-10 mr-32 lg:mr-52">
+        <div className="flex justify-between items-center gap-12 mr-16 lg:mr-52">
         <a className="text-grey text-2xl font-bold hover:text-white" href="/">blog</a>
         <a className="text-grey text-2xl font-bold hover:text-white" href="https://shobhit-nagpal.github.io/portfolio/" rel="noreferrer" target="_blank">work</a>
         { isAdmin ? 

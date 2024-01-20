@@ -103,7 +103,7 @@ function BlogContainer({id, title, content, created_at, is_published, fromDashbo
     }
 
     return (
-        <div className="border-solid border-2 border-grey rounded-md p-5 w-10/12 md:w-1/2 xl:w-1/3 cursor-pointer bg-black hover:border-white" onClick={() => {handleClick(id)}}>
+        <div className="border-solid border-2 border-grey rounded-md p-5 w-11/12 md:w-1/2 xl:w-1/3 cursor-pointer bg-black hover:border-white" onClick={() => {handleClick(id)}}>
         <div className="flex flex-col justify-center items-center">
         <h2 className="text-white text-center text-3xl font-bold">{title}</h2>
         <p className="text-grey mt-3">{created_at}</p>

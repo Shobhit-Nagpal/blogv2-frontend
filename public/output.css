@@ -890,6 +890,10 @@ video {
   font-style: italic;
 }
 
+.leading-8{
+  line-height: 2rem;
+}
+
 .text-black{
   --tw-text-opacity: 1;
   color: rgb(18 18 18 / var(--tw-text-opacity));
@@ -926,6 +930,42 @@ video {
   padding: 0;
   box-sizing: border-box;
   font-family: 'Rubik', sans-serif;
+}
+
+.blog h1 {
+  font-size: 2.25rem;
+}
+
+.blog h2 {
+  font-size: 2rem;
+}
+
+.blog li {
+  list-style: disc;
+  margin-left: 1rem;
+}
+
+.blog em {
+  font-size: 1.5rem;
+}
+
+.blog p, li {
+  font-size: 1.3rem;
+}
+
+.blog blockquote {
+  margin-top: 1rem;
+  margin: 0.5rem;
+  padding: 15px;
+  font-style: normal;
+  border-left: white 2px solid;
+  background: none;
+  text-align: left;
+}
+
+.blog a {
+  text-decoration: underline;
+  color: #808080;
 }
 
 .hover\:border-white:hover{

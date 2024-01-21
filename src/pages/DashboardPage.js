@@ -55,7 +55,7 @@ function DashboardPage() {
     return (
         <Layout>
         <div className="flex items-center justify-center">
-        <h1 className="text-white text-center text-4xl font-bold">Dashboard</h1>
+        <h1 className="text-white text-center text-4xl font-bold mt-10">Dashboard</h1>
         </div>
 
         {isLoading ? 

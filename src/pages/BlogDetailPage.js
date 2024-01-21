@@ -38,22 +38,22 @@ function BlogDetailPage() {
 
     return (
         <Layout>
-        <div>
-        {isLoading ? 
-            <BlogDetailSkeleton />
-            : 
-            <>
-            <div className="flex flex-col items-center justify-center p-5">
-            <h1 className="text-white text-4xl font-bold text-center">{title}</h1>
-            <p className="text-grey text-lg p-3">{formatDate(createdAt)}</p>
+            <div className="flex flex-col items-center justify-center">
+                {isLoading ? 
+                    <BlogDetailSkeleton />
+                    : 
+                    <>
+                        <div className="w-full max-w-4xl mx-auto p-5">
+                            <h1 className="text-white text-4xl font-bold text-center">{title}</h1>
+                            <p className="text-grey text-lg text-center p-3">{formatDate(createdAt)}</p>
+                        </div>
+                        <div className="w-full max-w-4xl mx-auto p-5"> 
+                            <div className="text-white blog text-lg mt-10 leading-8" dangerouslySetInnerHTML={{__html: content}}></div>
+                        </div>
+                    </>
+                }
             </div>
-            <div className="flex items-center justify-center p-5"> 
-            <div className="text-white blog text-lg mt-10 leading-8" dangerouslySetInnerHTML={{__html: content}}></div>
-            </div>
-            </>
-        }
-        </div>
-        </Layout >
+        </Layout>
     )
 }
 

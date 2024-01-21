@@ -541,16 +541,16 @@ video {
   position: fixed;
 }
 
+.left-4{
+  left: 1rem;
+}
+
 .right-4{
   right: 1rem;
 }
 
 .top-4{
   top: 1rem;
-}
-
-.left-4{
-  left: 1rem;
 }
 
 .m-10{
@@ -591,14 +591,6 @@ video {
   margin-bottom: 2rem;
 }
 
-.ml-16{
-  margin-left: 4rem;
-}
-
-.mr-16{
-  margin-right: 4rem;
-}
-
 .mr-4{
   margin-right: 1rem;
 }
@@ -615,16 +607,16 @@ video {
   margin-top: 8rem;
 }
 
+.mt-40{
+  margin-top: 10rem;
+}
+
 .mt-5{
   margin-top: 1.25rem;
 }
 
 .mt-8{
   margin-top: 2rem;
-}
-
-.mt-40{
-  margin-top: 10rem;
 }
 
 .block{
@@ -645,14 +637,6 @@ video {
 
 .h-screen{
   height: 100vh;
-}
-
-.w-1\/2{
-  width: 50%;
-}
-
-.w-1\/6{
-  width: 16.666667%;
 }
 
 .w-10\/12{
@@ -679,12 +663,12 @@ video {
   max-width: 56rem;
 }
 
-.max-w-md{
-  max-width: 28rem;
-}
-
 .max-w-6xl{
   max-width: 72rem;
+}
+
+.max-w-md{
+  max-width: 28rem;
 }
 
 .cursor-pointer{
@@ -723,16 +707,12 @@ video {
   gap: 2.75rem;
 }
 
-.gap-12{
-  gap: 3rem;
+.gap-4{
+  gap: 1rem;
 }
 
 .gap-5{
   gap: 1.25rem;
-}
-
-.gap-4{
-  gap: 1rem;
 }
 
 .space-y-4 > :not([hidden]) ~ :not([hidden]){
@@ -773,11 +753,6 @@ video {
 
 .border-solid{
   border-style: solid;
-}
-
-.border-green{
-  --tw-border-opacity: 1;
-  border-color: rgb(0 255 0 / var(--tw-border-opacity));
 }
 
 .border-grey{
@@ -844,10 +819,6 @@ video {
   padding: 2rem;
 }
 
-.p-10{
-  padding: 2.5rem;
-}
-
 .px-4{
   padding-left: 1rem;
   padding-right: 1rem;
@@ -866,14 +837,6 @@ video {
 .py-3{
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-}
-
-.pl-10{
-  padding-left: 2.5rem;
-}
-
-.pr-10{
-  padding-right: 2.5rem;
 }
 
 .text-center{
@@ -900,14 +863,14 @@ video {
   line-height: 1.75rem;
 }
 
-.text-xl{
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
 .text-sm{
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-bold{
@@ -1073,24 +1036,16 @@ video {
     width: 33.333333%;
   }
 
-  .md\:flex-col{
-    flex-direction: column;
-  }
-
-  .md\:gap-10{
-    gap: 2.5rem;
-  }
-
   .md\:gap-8{
     gap: 2rem;
   }
 
-  .md\:p-8{
-    padding: 2rem;
-  }
-
   .md\:p-3{
     padding: 0.75rem;
+  }
+
+  .md\:p-8{
+    padding: 2rem;
   }
 
   .md\:text-2xl{

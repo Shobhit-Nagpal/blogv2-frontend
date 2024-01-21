@@ -88,7 +88,8 @@ function AdminLoginPage() {
             <Alert isError={isError} message={toastMessage} />
             : null
         }
-        <div className="h-screen flex items-center justify-center">
+        <div className="h-screen">
+        <div className="flex items-center justify-center mt-40">
         <div className="max-w-md mx-auto p-8 bg-white rounded shadow-md">
         <h2 className="text-2xl font-bold mb-8 text-center">Login</h2>
         <div className="mb-4">
@@ -102,6 +103,7 @@ function AdminLoginPage() {
         <div className="flex items-center justify-between">
         <button className="bg-black hover:bg-grey text-white font-bold py-2 px-4 rounded focus:outline-none focus:ring focus:ring-grey" onClick={async () => {await authenticateAdmin(username, password)}}>Sign In</button>
         </div>
+        </div>        
         </div>        
         </div>
         </Layout>

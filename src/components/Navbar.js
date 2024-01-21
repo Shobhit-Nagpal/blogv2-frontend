@@ -14,23 +14,22 @@ function Navbar() {
     }
 
     return (
-        <div className="flex justify-between items-center gap-12 p-4 md:p-8 md:gap-10">
-        <div>
-        <a className="text-grey text-2xl font-bold ml-16 hover:text-blue lg:ml-52" href="/">[s]</a>
-        </div>
-        <div className="flex justify-between items-center gap-12 mr-16 lg:mr-52">
-        <a className="text-grey text-2xl font-bold hover:text-white" href="/">blog</a>
-        <a className="text-grey text-2xl font-bold hover:text-white" href="https://shobhit-nagpal.github.io/portfolio/" rel="noreferrer" target="_blank">work</a>
-        { isAdmin ? 
-            <div className="flex justify-between items-cetner gap-10 m-5">
-            <button className="text-black bg-green rounded-md p-3" onClick={() => {navigate("/post/create")}}>Create</button>
-            <button className="text-white bg-black border-solid border-2 border-red rounded-md p-3" onClick={() => {logout()}}>Logout</button>
+        <nav className="bg-black p-4 md:p-8">
+            <div className="flex flex-wrap justify-between items-center mx-auto max-w-6xl">
+                <a className="text-grey text-2xl font-bold hover:text-blue" href="/">[s]</a>
+                <div className="flex flex-wrap gap-4 md:gap-8">
+                    <a className="text-grey text-xl md:text-2xl font-bold hover:text-white" href="/">blog</a>
+                    <a className="text-grey text-xl md:text-2xl font-bold hover:text-white" href="https://shobhit-nagpal.github.io/portfolio/" rel="noreferrer" target="_blank">work</a>
+                    {isAdmin && (
+                        <div className="flex gap-4 md:gap-8">
+                            <button className="text-black bg-green text-sm md:text-base rounded-md p-2 md:p-3" onClick={() => navigate("/post/create")}>Create</button>
+                            <button className="text-white bg-black border-solid border-2 border-red text-sm md:text-base rounded-md p-2 md:p-3" onClick={logout}>Logout</button>
+                        </div>
+                    )}
+                </div>
             </div>
-            : 
-            null }
-        </div>
-        </div>
-    )
+        </nav>
+    );
 }
 
 export default Navbar;

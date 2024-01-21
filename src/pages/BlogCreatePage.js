@@ -18,12 +18,14 @@ function BlogCreatePage() {
 
     return (
         <Layout>
-        <div>
-        <div className="flex items-center justify-center">
-        <h1 className="text-center text-grey text-2xl font-bold m-5">What's on your mind today?</h1>
-        </div>
-        <Editor isEdit={false} />
-        </div>
+            <div className="flex flex-col min-h-screen">
+                <div className="flex items-center justify-center">
+                    <h1 className="text-center text-grey text-2xl font-bold m-5">What's on your mind today?</h1>
+                </div>
+                <Editor isEdit={false} />
+                <div className="mt-auto">
+                </div>
+            </div>
         </Layout>
     )
 }

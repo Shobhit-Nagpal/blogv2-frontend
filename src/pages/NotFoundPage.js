@@ -12,7 +12,7 @@ function NotFoundPage() {
         </div>
 
         <div className="flex justify-center items-center">
-        <p className="text-white text-2xl">Page Not Found. Go back to <a className="text-grey underline" href="/">home page</a></p>
+        <p className="text-white text-center text-2xl p-5">Page Not Found. Go back to <a className="text-grey underline" href="/">home page</a></p>
         </div>
         </div>
         </Layout>

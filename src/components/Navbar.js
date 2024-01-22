@@ -19,7 +19,7 @@ function Navbar() {
                 <a className="text-grey text-2xl font-bold hover:text-blue" href="/">[s]</a>
                 <div className="flex flex-wrap gap-4 md:gap-8">
                     <a className="text-grey text-xl md:text-2xl font-bold hover:text-white" href="/">blog</a>
-                    <a className="text-grey text-xl md:text-2xl font-bold hover:text-white" href="https://shobhit-nagpal.github.io/portfolio/" rel="noreferrer" target="_blank">work</a>
+                    <a className="text-grey text-xl md:text-2xl font-bold hover:text-white" href="https://www.shobhitnagpal.com/">work</a>
                     {isAdmin && (
                         <div className="flex gap-4 md:gap-8">
                             <button className="text-black bg-green text-sm md:text-base rounded-md p-2 md:p-3" onClick={() => navigate("/post/create")}>Create</button>

@@ -22,7 +22,7 @@ function BlogCreatePage() {
                 <div className="flex items-center justify-center">
                     <h1 className="text-center text-grey text-2xl font-bold m-5">What's on your mind today?</h1>
                 </div>
-                <Editor isEdit={false} />
+                <Editor isEdit={false} id={null} />
                 <div className="mt-auto">
                 </div>
             </div>

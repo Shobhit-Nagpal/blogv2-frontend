@@ -54,7 +54,7 @@ function DashboardPage() {
 
     return (
         <Layout>
-        <div className="flex items-center justify-center h-screen">
+        <div className="flex items-center justify-center">
         <h1 className="text-white text-center text-4xl font-bold mt-10">Dashboard</h1>
         </div>
 
@@ -72,7 +72,7 @@ function DashboardPage() {
             </div>
             </>
             : 
-            <div className="flex flex-col gap-10 items-center h-screen m-10">
+            <div className="flex flex-col gap-10 items-center m-10">
             {
                 posts.map((post) => {
                 return <BlogContainer 

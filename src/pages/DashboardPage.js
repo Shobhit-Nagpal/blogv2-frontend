@@ -54,12 +54,12 @@ function DashboardPage() {
 
     return (
         <Layout>
-        <div className="flex items-center justify-center">
+        <div className="w-full flex items-center justify-center">
         <h1 className="text-white text-center text-4xl font-bold mt-10">Dashboard</h1>
         </div>
 
         {isLoading ? 
-            <div className="flex flex-col gap-11 items-center h-screen m-10">
+            <div className="w-full flex flex-col gap-11 items-center h-screen m-10">
             <BlogContainerSkeleton />
             <BlogContainerSkeleton />
             <BlogContainerSkeleton />
@@ -72,7 +72,7 @@ function DashboardPage() {
             </div>
             </>
             : 
-            <div className="flex flex-col gap-10 items-center m-10">
+            <div className="w-full flex flex-col gap-10 items-center m-10">
             {
                 posts.map((post) => {
                 return <BlogContainer 

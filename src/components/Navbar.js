@@ -14,7 +14,7 @@ function Navbar() {
     }
 
     return (
-        <nav className="bg-black p-4 md:p-8">
+        <nav className="bg-black p-4 md:p-8 w-full">
             <div className="flex flex-wrap justify-between items-center mx-auto max-w-6xl">
                 <a className="text-grey text-2xl font-bold hover:text-blue" href="/">[s]</a>
                 <div className="flex flex-wrap gap-4 md:gap-8">

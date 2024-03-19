@@ -4,7 +4,7 @@ import { FaXTwitter } from "react-icons/fa6";
 
 function Footer() {
     return (
-        <div className="bg-black flex flex-col-reverse justify-between items-center gap-10 p-5 mt-8 lg:flex-row">
+        <div className="w-full bg-black flex flex-col-reverse justify-between items-center gap-10 p-5 mt-8 lg:flex-row">
         <div>
         <p className="text-grey lg:ml-52">Copyright &#169; 2024</p>
         </div>

@@ -29,11 +29,11 @@ function HomePage() {
 
     return (
         <Layout>
-        <div className="flex justify-center items-center">
+        <div className="w-full flex justify-center items-center">
         <h2 className="text-center text-white text-3xl mt-10">Blog</h2>
         </div>
         { isLoading ? 
-            <div className="flex flex-col gap-11 items-center h-screen m-10">
+            <div className="w-full flex flex-col gap-11 items-center h-screen m-10">
             <BlogContainerSkeleton />
             <BlogContainerSkeleton />
             <BlogContainerSkeleton />
@@ -41,12 +41,12 @@ function HomePage() {
             :
             posts.length === 0 ? 
             <>
-            <div className="flex justify-center items-center h-screen">
+            <div className="w-full flex justify-center items-center h-screen">
             <p className="text-center mb-40 text-white text-2xl">There are no posts currently </p> 
             </div>
             </>
             : 
-            <div className="flex flex-col gap-10 items-center h-screen m-10">
+            <div className="w-full flex flex-col gap-10 items-center h-screen m-10">
             {
                 posts.map((post) => {
                 return <BlogContainer 
